@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Aufgabe1.2.dir/Aufgabe_1.2.cpp.o  -o Aufgabe1.2 
