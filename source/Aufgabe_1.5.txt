@@ -1,0 +1,8 @@
+Bei der Initialisierung wird einer Variable ein konkreter Wert zugewiesen.
+Bsp: int a = 5;
+
+Bei der Zuweisung wird einer Variable ebenfalls ein konkreter Wert zugewiesen, 
+man spricht allerdings nur von einer Zuweisung, wenn die Variable bereits im Voraus deklariert 
+wurde.
+Bsp: int a;
+     a = 5;
