@@ -1,3 +1,0 @@
-/home/hannes/Dokumente/Semester_2/Programmiersprachen/programmiersprachen-aufgabe-1/source/build/CMakeFiles/rebuild_cache.dir
-/home/hannes/Dokumente/Semester_2/Programmiersprachen/programmiersprachen-aufgabe-1/source/build/CMakeFiles/Aufgabe1.2.dir
-/home/hannes/Dokumente/Semester_2/Programmiersprachen/programmiersprachen-aufgabe-1/source/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,3 @@
+#inore build and visual studio folders
+build/
+.vscode/

@@ -1,0 +1,10 @@
+Bei einer Deklaration wird lediglich der Name eines abstraken Konstrukts, 
+z. B. einer Variable oder Methode bekanntgegeben und reserviert;
+Bsp: extern int a;
+     void rechnen();
+     class test;
+
+Bei einer Defintion wird Platz im Speicher für etwas reserviert, 
+z. B. eine Variable oder eine Methode, ohne, dass der Inhalt der selben bekannt sein muss.
+Bsp: void rechnen() {};
+     class test {};

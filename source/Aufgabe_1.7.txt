@@ -1,0 +1,26 @@
+# include < iostream >
+
+// int var ist vor einer Methode definiert worden und somit im ganzen Dokument erreichbar.
+int var = 3;
+
+// Double a und b werden erst erstellt, wenn die Methode sum aufgerufen wird, sie sind nur in der
+// Methode sum gültig.
+double sum ( double a , double b )
+{
+    return a + b ;
+}
+
+// Integer var werden erst erstellt, wenn die Methode sum aufgerufen wird, sie sind nur in der
+// Methode square gültig.
+int square ( int var )
+{
+    return var * var ;
+}
+int main ()
+{
+    for ( int i = 0; i != 100; ++ i ) {
+        std :: cout << " i ^2 = " << square ( i ) << ’\ n ’;
+        std :: cout << " i + i = " << sum (i , i ) << ’\ n ’;
+    }
+    return 0;
+}

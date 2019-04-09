@@ -1,0 +1,32 @@
+int main () {
+    // Die Variable a ist vom Typ Integer und hat den Wert 9.
+    int a = 9;
+
+    // Die Variable b ist vom Typ Boolean und hat den Wert false.
+    bool b = false;
+
+    // Die Variable c ist vom Typ Character und hat den Wert a.
+    char c = 'a';
+
+    // Die Variable d ist vom Typ Double und hat den Wert 1.3.
+    double d = 1.3;
+
+    // Die Variable five ist vom Typ Integer und als const, also als nicht 
+    // modifizierbar gekennzeichnet. Sie hat immer den Wert 5.
+    int const five = 5;
+    double e = a/two;
+
+    // Hier wird versucht auf die Variable five zuzugreifen, was aber durch const 
+    // nicht möglich ist.
+    five = d;
+
+    return 0;
+}
+
+// Eine Typveränderung ist eine Umwandlung des Datentyps einer Variable in einen anderen.
+// Dabei kann es aber schnell dazu kommen, dass der Wert der Variable nicht kompatibel mit dem
+// neuen Datentyp ist.
+
+// Dieser Code ist vor allem problematisch, weil die Namen der Variabeln keiner Auskunft über
+// ihren Inhalt geben. Damit ist es sehr schwer ohne längere Einarbeitung den Sinn des Programms
+// zu verstehen.
