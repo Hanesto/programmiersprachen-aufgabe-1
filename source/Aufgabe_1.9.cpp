@@ -1,45 +1,27 @@
-#define CATCH_CONFIG_RUNNER
+#define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-#include <cmath>
 
-int gcd (int a, int b) {
+using namespace std;
 
-  int teiler;
-
-  if((a == 0) || (b == 0))
-  {
-    std::cout << "Eine der eingegebenen Variablen ist 0" << std::endl;
-  }
-
-  if(a <= b)
-  {
-    teiler = a;
-  }
-  else
-  {
-    teiler = b;
-  }
-
-  for(int i = teiler; i > 0; i++)
-  {
-    if((i % a == 0) && (i % b == 0))
-    {
-      teiler = i;
-      break;
-    }
-  }
-
-  return teiler;
-}
-
-TEST_CASE ( " describe_gcd " , " [ gcd ] " )
+int quersum(int eingabe)
 {
-  REQUIRE( gcd (2 ,4) == 2);
-  REQUIRE( gcd (9 ,6) == 3);
-  REQUIRE( gcd (3 ,7) == 1);
+    int sum;
+    std::string chars = std::to_string(eingabe);
+    int length = chars.length(); 
+    char char_array[length + 1]; 
+
+    strcpy(char_array, chars.c_str()); 
+
+    for(int i = 0; i < length; i++)
+    {
+         sum += i;
+    }
+    
+    return sum;
 }
 
-int main ( int argc , char * argv []) {
-
-  return Catch :: Session (). run ( argc , argv );
+TEST_CASE("Quersumme berechnet", "[quersum]")
+{
+    REQUIRE(quersum(10) == 1);
+    REQUIRE(quersum(12345) == 15);
 }
