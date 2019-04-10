@@ -1,27 +1,29 @@
-#define CATCH_CONFIG_MAIN
+#define CATCH_CONFIG_RUNNER
 #include "catch.hpp"
+#include <string>
 
 using namespace std;
 
 int quersum(int eingabe)
 {
-    int sum;
-    std::string chars = std::to_string(eingabe);
-    int length = chars.length(); 
-    char char_array[length + 1]; 
+    int quersumme = 0;
 
-    strcpy(char_array, chars.c_str()); 
-
-    for(int i = 0; i < length; i++)
+    while (eingabe > 0) 
     {
-         sum += i;
+        quersumme += eingabe % 10;
+        eingabe /= 10;
     }
-    
-    return sum;
+
+    return quersumme;
 }
 
 TEST_CASE("Quersumme berechnet", "[quersum]")
 {
     REQUIRE(quersum(10) == 1);
     REQUIRE(quersum(12345) == 15);
+}
+
+int main (int argc, char * argv[]) 
+{
+  return Catch::Session().run(argc , argv);
 }

@@ -20,9 +20,9 @@ int gcd (int a, int b) {
     teiler = b;
   }
 
-  for(int i = teiler; i > 0; i++)
+  for(int i = teiler; i > 0; i--)
   {
-    if((i % a == 0) && (i % b == 0))
+    if((a % i == 0) && (b % i == 0))
     {
       teiler = i;
       break;
