@@ -1,4 +1,4 @@
-c++ = maschinennahe, bjektorientierte Programmiersprache
+c++ = maschinennahe, objektorientierte Programmiersprache
 Quellcode = von Menschen lesbare Abfolge von Anweisungen, die für den Computer übersetzt werden können
 Compiler = Übersetzer von Quellcode zu Code den der Computer ausführen kann
 Linker = Der Linker fügt einzelne Programmteile zu einem auführbaren Programm zusammen
