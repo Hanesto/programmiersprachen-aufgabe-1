@@ -18,7 +18,14 @@ float nachkommastellen(float eingabe)
         
     ausgabe = stof(zahl);
 
-    return ausgabe;
+    if(eingabe < 0)
+    {
+      return -ausgabe;
+    }
+    else
+    {
+      return ausgabe;
+    }
 }
 
 TEST_CASE("Nachkommastellen berechnet", "[nachkommastellen]")

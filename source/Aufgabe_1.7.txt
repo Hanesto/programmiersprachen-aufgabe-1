@@ -1,27 +1,16 @@
 # include < iostream >
 
-<<<<<<< HEAD
-// int var ist vor einer Methode definiert worden und somit im ganzen Dokument erreichbar.
-int var = 3;
-
-// Double a und b werden erst erstellt, wenn die Methode sum aufgerufen wird, sie sind nur in der
-// Methode sum gültig.
-=======
 //int var ist vor einer Methode definiert worden und somit im ganzen Dokument erreichbar.
 int var = 3;
 
 //Double a und b 
->>>>>>> fbfc11dd50936169b467d9835b473928046916c0
 double sum ( double a , double b )
 {
     return a + b ;
 }
-<<<<<<< HEAD
 
 // Integer var werden erst erstellt, wenn die Methode sum aufgerufen wird, sie sind nur in der
 // Methode square gültig.
-=======
->>>>>>> fbfc11dd50936169b467d9835b473928046916c0
 int square ( int var )
 {
     return var * var ;
