@@ -8,10 +8,9 @@ using namespace std;
 double mile_to_kilometer(double eingabe)
 {
  std::cout << "Bitte geben Sie einen Wert in Meilen ein :\n" ;
- double mile_wert ;
- std::cin >> mile_wert;
+ std::cin >> eingabe;
 
- double km_wert = (mile_wert * 1.60934);
+ double km_wert = (eingabe * 1.60934);
 
  std::cout << km_wert << std::endl;
 
@@ -20,8 +19,8 @@ double mile_to_kilometer(double eingabe)
 
 TEST_CASE("Produkt berechnet")
 {
-   REQUIRE(mile_to_kilometer(3) == 4.82803);
-   REQUIRE(mile_to_kilometer(12) == 19.3121);
+   REQUIRE(mile_to_kilometer(3) == 4.82802);
+   REQUIRE(mile_to_kilometer(12) == 19.31208);
 }
 
 int main (int argc, char * argv[]) 

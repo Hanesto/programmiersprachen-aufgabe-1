@@ -2,21 +2,21 @@
 
 using namespace std;
 
-int smlInt = 1;
+int teiler = 1;
 
 int main()
 {            
     for( int i = 1; i <= 20; i++) 
     { 
-        if((i == 20) && (smlInt % i == 0))
+        if((i == 20) && (teiler % i == 0))
         {
-            std::cout << smlInt << std::endl;
+            std::cout << teiler << std::endl;
             break;
         }
              
-        if(smlInt % i != 0)
+        if(teiler % i != 0)
         {
-            smlInt++;
+            teiler++;
             i = 0;
         }                
     }                      
